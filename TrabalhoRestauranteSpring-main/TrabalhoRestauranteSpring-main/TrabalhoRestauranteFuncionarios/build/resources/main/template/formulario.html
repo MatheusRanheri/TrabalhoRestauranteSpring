@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de filme</title>
+    <link rel="stylesheet" href="../static/estilos.css" th:href="@{/estilos.css}">
+</head>
+<body>
+<div>
+    <h1>Cadastro de restaurante</h1>
+    <form method="post" action="/paginainicial" >
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome">
+
+        <br/>
+
+        <label for="duracaoEmMinutos">Duração (em minutos):</label>
+        <input id="duracaoEmMinutos" name="duracaoEmMinutos">
+
+        <br/>
+
+        <label for="anoLancamento">Ano de lançamento:</label>
+        <input id="anoLancamento" name="anoLancamento">
+
+        <br/>
+
+        <label for="genero">Gênero:</label>
+        <input id="genero" name="genero">
+
+        <br/>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>
+</body>
+</html>
