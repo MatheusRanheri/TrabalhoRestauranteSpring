@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario do Funcionario</title>
+    <link rel="stylesheet" href="../static/estilos.css" th:href="@{/estilos.css}">
+</head>
+<body>
+<div>
+    <h1>Cadastro de funcionarios</h1>
+    <form method="post" action="/paginaInicial" >
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome">
+
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>
+</body>
+</html>
