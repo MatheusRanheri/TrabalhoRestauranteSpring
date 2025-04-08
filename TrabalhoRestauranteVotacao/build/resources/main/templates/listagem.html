@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/estilos.css" th:href="@{/estilos.css}">
+    <title>Listagem de votos</title>
+</head>
+<div>
+    <h1>Lista de votos</h1>
+
+
+    <table>
+        <thead>
+        <tr>
+            <th>Restaurante</th>
+            <th>Numero de votos</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${lista}">
+            <td th:text="${item.nomeRestaurante}">nome</td>
+            <td th:text="${item.qntVotos}">0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
